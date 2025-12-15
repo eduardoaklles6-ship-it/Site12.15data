@@ -1,0 +1,233 @@
+/* ========================================================= */
+/* ESTILOS GERAIS E TIPOGRAFIA */
+/* ========================================================= */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #9d5a7d; /* Rosa/Vinhol Principal */
+}
+
+section {
+  padding: 60px 20px;
+}
+
+.centered-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ========================================================= */
+/* HEADER E NAVEGAÇÃO */
+/* ========================================================= */
+.main-header {
+  background: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,.05);
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #333;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os links em uma linha */
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6a6a6a;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    color: #9d5a7d;
+    border-bottom: 2px solid #9d5a7d;
+}
+
+/* --- Responsividade da Navegação --- */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* ========================================================= */
+/* SEÇÕES DE CONTEÚDO */
+/* ========================================================= */
+.hero {
+  background: #fff0f5; 
+}
+
+.mensagem-destaque {
+  max-width: 700px;
+  margin: 30px auto;
+  font-style: italic;
+  font-size: 1.3em;
+  line-height: 1.5;
+  border-left: 3px solid #9d5a7d;
+  padding-left: 15px;
+  color: #8B0000;
+}
+
+#countdown-container {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 300px;
+  border: 1px dashed #9d5a7d;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+}
+
+#time-together {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* --- Galeria --- */
+#galeria {
+    background: #fff;
+}
+.gallery-grid {
+  max-width: 900px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform .3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item p {
+    padding: 10px;
+    margin: 0;
+    font-size: 0.9em;
+    color: #6a6a6a;
+}
+
+/* --- Timeline --- */
+#timeline {
+    background: #f7f7f7;
+}
+.timeline-item {
+  max-width: 600px;
+  margin: 15px auto;
+  background: #fff;
+  padding: 15px;
+  border-left: 3px solid #9d5a7d;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+/* --- Curiosidades --- */
+#fatos {
+    background: #fff;
+}
+.facts-list {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.facts-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+/* --- Música --- */
+#musica {
+    background: #f7f7f7;
+}
+.music-player-box {
+  max-width: 560px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* --- Rodapé --- */
+footer {
+  background: #9d5a7d;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* ========================================================= */
+/* ANIMAÇÕES */
+/* ========================================================= */
+.fade-in {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Estado inicial da animação de revelação */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease-out;
+}
+
+/* Estado ativo (quando aparece na tela) */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

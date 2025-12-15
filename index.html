@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para o Meu Amor 💖</title>
+    <link rel="stylesheet" href="./styles.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>E.A & A.M</h1>
+        <nav>
+            <ul>
+                <li><a href="#declaracao">Nossa Mensagem</a></li>
+                <li><a href="#galeria">Recordações</a></li>
+                <li><a href="#timeline">A Nossa História</a></li>
+                <li><a href="#fatos">Curiosidades</a></li>
+                <li><a href="#musica">A Nossa Canção</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="declaracao" class="hero reveal"> 
+            <h2 class="centered-text">Minha Mensagem Especial</h2>
+            
+            <p class="centered-text">
+                Em um mês mudou tanta coisa… De um simples beijinho na testa pra um abraço demorado. 
+            </p>
+            
+            <p class="mensagem-destaque">
+                Sinto que estou seguro perto de você, que posso falar tudo mesmo com vergonha. 
+                <br>
+                E que Te gosto como o vento gosta de bagunçar o cabelo. 
+                Eu Te amo como amo um domingo preguiçoso.
+                Te adoro como abraço apertado adora durar.
+            </p>
+
+            <p class="centered-text">
+                Eu sei que você pensa que um dia pode me machucar, mas por enquanto isso não acontece e eu só quero viver o que a gente tem, do jeitinho que está acontecendo.
+            </p>
+
+            <div id="countdown-container" class="centered-text">
+                <p>
+                    Juntos desde 9 de Outubro!
+                </p>
+                <p id="time-together"></p>
+            </div>
+        </section>
+
+        <section id="galeria" class="reveal">
+            <h2>Nossas Pequenas Alegrias</h2>
+            <div class="gallery-grid">
+                
+                <div class="gallery-item fade-in">
+                    <img src="./foto1.jpg" alt="Um olhar que diz tudo."> 
+                    <p>Um olhar que diz tudo, sem precisar de palavras.</p>
+                </div>
+                
+                <div class="gallery-item fade-in">
+                    <img src="./foto2.jpg" alt="Onde a felicidade se torna nossa paisagem preferida.">
+                    <p>Onde a felicidade se torna nossa paisagem preferida.</p>
+                </div>
+                
+                <div class="gallery-item fade-in">
+                    <img src="./foto3.jpg" alt="A eternidade cabe em um momento com você.">
+                    <p>A eternidade cabe em um momento com você.</p>
+                </div>
+                
+                <div class="gallery-item fade-in">
+                    <img src="./foto4.jpg" alt="Nossa história, um quadro pintado com amor.">
+                    <p>Nossa história, um quadro pintado com amor.</p> 
+                </div>
+
+            </div>
+        </section>
+
+        <section id="timeline" class="reveal">
+            <h2>A Jornada do Nosso Amor</h2>
+            
+            <div class="timeline-item">
+                <p><strong>09/10/2024</strong>: O início de tudo. A primeira conversa que nunca terminou.</p>
+            </div>
+            <div class="timeline-item">
+                <p><strong>[DD/MM/AAAA]</strong>: O pedido de namoro sob as estrelas.</p>
+            </div>
+            <div class="timeline-item">
+                <p><strong>[DD/MM/AAAA]</strong>: Nossa primeira grande aventura juntos (Viagem para [Lugar]).</p>
+            </div>
+            <div class="timeline-item">
+                <p><strong>[DD/MM/AAAA]</strong>: O momento em que soube que era para sempre.</p>
+            </div>
+        </section>
+        
+        <section id="fatos" class="reveal">
+            <h2>Curiosidades Sobre Nós ❤️</h2>
+            <ul class="facts-list">
+                <li>O nosso primeiro encontro "oficial" durou 5 horas e quase perdemos o ônibus.</li>
+                <li>O apelido secreto que você mais odeia (e eu amo) é: **Florzinha**.</li>
+                <li>Ambos pedimos o mesmo prato no nosso restaurante favorito: **Risoto de Cogumelos**.</li>
+                <li>Você sempre consegue me fazer rir contando a história de quando... [Insira uma pequena história engraçada].</li>
+            </ul>
+        </section>
+
+        <section id="musica" class="reveal">
+            <h2>A Canção que Toca a Alma</h2>
+            <div class="music-player-box centered-text">
+                <p style="font-weight: bold; margin-bottom: 15px;">Só Nós Dois - Tim Bernardes</p>
+                
+                <iframe 
+                    width="100%" 
+                    height="315" 
+                    src="SUA_URL_DO_VÍDEO_YOUTUBE_AQUI" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+                
+                <p style="margin-top: 15px; font-size: 0.9em;">
+                    Sempre que esta música toca, lembro-me do nosso primeiro beijo.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Feito com todo o amor de E.A ❤️</p>
+    </footer>
+
+    <script>
+        function updateTimeTogether() {
+            // DATA DE INÍCIO DEFINIDA: 9 de Outubro de 2024
+            const startDate = new Date("October 9, 2024 00:00:00");
+            const today = new Date();
+            
+            const diff = today - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+            const years = Math.floor(days / 365.25);
+            const remainingDaysAfterYears = days % 365.25;
+            const months = Math.floor(remainingDaysAfterYears / 30.4375);
+            const remainingDays = Math.floor(remainingDaysAfterYears % 30.4375);
+
+            let output = "";
+            
+            if (years > 0) {
+                output += years + (years === 1 ? " ano" : " anos");
+                if (months > 0 || remainingDays > 0) output += ", ";
+            }
+            if (months > 0) {
+                output += months + (months === 1 ? " mês" : " meses");
+                if (remainingDays > 0 && years < 1) output += " e ";
+                else if (remainingDays > 0) output += ", ";
+            }
+            if (remainingDays > 0) {
+                 output += remainingDays + (remainingDays === 1 ? " dia" : " dias");
+            }
+            
+            if (output === "") {
+                output = "Menos de 1 dia! O amor está fresco!";
+            }
+
+            document.getElementById("time-together").innerHTML = `Estamos Juntos Há: <br> ${output}`;
+        }
+
+        updateTimeTogether();
+        setInterval(updateTimeTogether, 3600000); 
+
+        const reveals = document.querySelectorAll(".reveal");
+        
+        const revealContent = () => {
+            reveals.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                
+                if (elementTop < window.innerHeight - 100) {
+                    el.classList.add("active");
+                }
+            });
+        };
+
+        window.addEventListener("scroll", revealContent);
+        window.addEventListener("load", revealContent);
+    </script>
+</body>
+</html>
